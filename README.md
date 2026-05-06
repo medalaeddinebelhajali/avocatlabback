@@ -1,36 +1,46 @@
 kifech tsoba aandek
 
 
-1. Clone الـ repo
+1. Clone the repo:
+
 git clone https://github.com/username/nom-repo.git
 
-2. ادخل للفولدر
+2. open floder:
+
 cd nom-repo
 
-3. نشئ برانشتك
+3. create your branch:
+
 git checkout -b ismek
 
-4. جيب الـ vendor
+4. import the laravel component:
+
 composer install
 
-5. نشئ ملف .env
+5. creat .env file:
+
 cp .env.example .env
 
-6. ولّد الـ key
+6. generate key:
+
 php artisan key:generate
 
-7. اضبط قاعدة البيانات في .env
+7. relatione db in .env file:
+
 DB_DATABASE=nom_base
 DB_USERNAME=root
 DB_PASSWORD=
 
-8. شغّل الـ migrations
+8. start migrations:
+
 php artisan migrate
 
-9. شغّل الـ serveur
+9. start serveur:
+
 php artisan serve
 
-10. بعد ما تشتغل صب لبرانشتك
+10. repeat this if yo do any thing :
+
 git add .
 git commit -m "mon travail"
 git push -u origin ismek
